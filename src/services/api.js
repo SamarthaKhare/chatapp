@@ -2,7 +2,7 @@ const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;  // ✅ Load from `.env`
 
 export async function sendMessage(query) {
   try {
-    const response = await fetch(`${BACKEND_URL}`, {
+    const response = await fetch(`${BACKEND_URL}/chat`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
